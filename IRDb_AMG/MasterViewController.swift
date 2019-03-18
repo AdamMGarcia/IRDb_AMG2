@@ -24,6 +24,27 @@ class MasterViewController: UITableViewController {
         if let split = splitViewController {
             let controllers = split.viewControllers
             detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
+        
+            
+        //JSON Parsing
+        let url = "https://restcountries.eu/rest/v2/all"
+        let urlObj = URL(string: url)
+        
+        URLSession.shared.dataTask(with: url) {(data, response, error) in
+        
+            do {
+                var franchises = try JSONDecoder().decode([franchise!].self, from: data!)
+                    
+                for franchise in franchises {
+                    print(franchise.name)
+                }
+            } catch {
+                print("An error occured")
+                
+            }
+            
+            
+            }.resume()
         }
     }
 
