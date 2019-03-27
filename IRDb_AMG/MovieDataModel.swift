@@ -12,17 +12,19 @@ class MovieDataModel: Codable {
     var franchise: [Franchises]
 }
 
-class Franchises: Codable{
-    var FranchiseName: String
-    var entry = [Entries]
+class Franchises: Codable {
+    let franchiseName: String
+    var entries: [Entry]
 }
+
+class Entry: Codable {
+    let name: String
+    let format: String
+    let yearStart: String
+    let yearEnd: String?
+    let episode: String?
+    let studio: String?
+    let description: String
+    let castList: String
     
-class Entries: Codable{
-        var string: name
-        var string: year
-        var string: Format
-        var string: network
-        var string: episodes
-        var string: castList
-            
-        }
+}

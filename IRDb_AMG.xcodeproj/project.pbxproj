@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		665CC97C224912F70059C210 /* MovieDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665CC97B224912F70059C210 /* MovieDataModel.swift */; };
 		665CC97E2249131B0059C210 /* MovieDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665CC97D2249131B0059C210 /* MovieDataController.swift */; };
+		665CC980224B31A80059C210 /* MovieDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665CC97F224B31A80059C210 /* MovieDataModel.swift */; };
 		AB6237D0223FD27C00C03E75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6237CF223FD27C00C03E75 /* AppDelegate.swift */; };
 		AB6237D2223FD27C00C03E75 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6237D1223FD27C00C03E75 /* MasterViewController.swift */; };
 		AB6237D4223FD27C00C03E75 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6237D3223FD27C00C03E75 /* DetailViewController.swift */; };
@@ -37,8 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		665CC97B224912F70059C210 /* MovieDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDataModel.swift; sourceTree = "<group>"; };
 		665CC97D2249131B0059C210 /* MovieDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDataController.swift; sourceTree = "<group>"; };
+		665CC97F224B31A80059C210 /* MovieDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDataModel.swift; sourceTree = "<group>"; };
 		AB6237CC223FD27C00C03E75 /* IRDb_AMG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IRDb_AMG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB6237CF223FD27C00C03E75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB6237D1223FD27C00C03E75 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -110,8 +110,8 @@
 				AB6237D8223FD27E00C03E75 /* Assets.xcassets */,
 				AB6237DA223FD27E00C03E75 /* LaunchScreen.storyboard */,
 				AB6237DD223FD27E00C03E75 /* Info.plist */,
-				665CC97B224912F70059C210 /* MovieDataModel.swift */,
 				665CC97D2249131B0059C210 /* MovieDataController.swift */,
+				665CC97F224B31A80059C210 /* MovieDataModel.swift */,
 			);
 			path = IRDb_AMG;
 			sourceTree = "<group>";
@@ -267,7 +267,7 @@
 			files = (
 				AB6237D4223FD27C00C03E75 /* DetailViewController.swift in Sources */,
 				AB6237D2223FD27C00C03E75 /* MasterViewController.swift in Sources */,
-				665CC97C224912F70059C210 /* MovieDataModel.swift in Sources */,
+				665CC980224B31A80059C210 /* MovieDataModel.swift in Sources */,
 				665CC97E2249131B0059C210 /* MovieDataController.swift in Sources */,
 				AB6237D0223FD27C00C03E75 /* AppDelegate.swift in Sources */,
 			);
