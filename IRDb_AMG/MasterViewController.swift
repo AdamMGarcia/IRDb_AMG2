@@ -10,18 +10,29 @@ import UIKit
 
 class MasterViewController: UITableViewController {
 
-    var detailViewController: DetailViewController? = nil
+    var detailViewController: DetailViewController?
     let dataController = MovieDataController()
     var rebootDataModel: MovieDataModel? {
         didSet {
             tableView.reloadData()
         }
     }
-
+    
+    var objects = [Any]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        let titleImage = UIImage(named: "irdblogo")
+        let titleImageView = UIImageView(image: titleImage)
+        navigationItem.titleView = titleImageView
+        
+        dataController.getRebootData(completion: {dataModel in
+            self.rebootDataModel = dataModel
+        })
+        
         
         if let split = splitViewController {
             let controllers = split.viewControllers
@@ -32,6 +43,13 @@ class MasterViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         clearsSelectionOnViewWillAppear = splitViewController!.isCollapsed
         super.viewWillAppear(animated)
+    }
+    
+    @objc
+    func insertNewObject(_ sender: Any) {
+        objects.insert(NSDate(), at: 0)
+        let indexPath = IndexPath(row: 0, section: 0)
+        tableView.insertRows(at: [indexPath], with: .automatic)
     }
 
 
