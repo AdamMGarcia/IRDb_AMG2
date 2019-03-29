@@ -23,8 +23,14 @@ class Entry: Codable {
     let yearStart: String
     let yearEnd: String?
     let episode: String?
-    let studio: String?
+    let network: String?
+    let imageURL: String
     let description: String
-    let castList: String
-    
+    let summary: String
+    var castmembers: [Cast]
+}
+
+class Cast: Codable {
+    let castName: String
+    let playing: String
 }

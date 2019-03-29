@@ -16,11 +16,6 @@ class MasterViewController: UITableViewController {
         didSet {
             tableView.reloadData()
         }
-        
-        
-        
-        
-        
     }
 
 
