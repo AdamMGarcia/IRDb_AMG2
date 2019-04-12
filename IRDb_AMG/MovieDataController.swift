@@ -11,7 +11,7 @@ import UIKit
 class MovieDataController: NSObject {
         
         //JSON Parsing
-        let url = "https://restcountries.eu/rest/v2/all"
+        let url = "https://api.myjson.com/bins/1e5uji"
         
         var dataModel: Any?
     

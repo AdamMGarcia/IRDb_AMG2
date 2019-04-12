@@ -11,7 +11,6 @@ import UIKit
 class DetailViewController: UIViewController {
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
-    
     @IBOutlet weak var UIname: UILabel!
     @IBOutlet weak var UIformat: UILabel!
     @IBOutlet weak var UIyear: UILabel!
@@ -28,12 +27,6 @@ class DetailViewController: UIViewController {
     func configureView() {
         // Update the user interface for the detail item.
         if let detail = detailItem {
-            
-            
-            
-            
-            
-            
             if let episodes = detail.episode{
                 UIepisode.text = "\(episodes)"
                 

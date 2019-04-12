@@ -113,9 +113,15 @@
                     <navigationItem key="navigationItem" title="Detail" id="mOI-FS-AaM"/>
                     <connections>
                         <outlet property="ImageView" destination="nB0-Kl-nMk" id="Xr2-oA-zaj"/>
+                        <outlet property="UIName" destination="yqM-9L-8Q3" id="DAW-eV-vlG"/>
                         <outlet property="UISummery" destination="vFK-v5-QCf" id="Rsj-4I-Vhh"/>
+                        <outlet property="UIcastButton" destination="XMi-zc-YEw" id="GIW-5m-jVa"/>
                         <outlet property="UIdescription" destination="Qqn-IY-ucL" id="ktv-qp-KrQ"/>
+                        <outlet property="UIepisode" destination="eSr-ZV-cLt" id="c1Y-0p-1oB"/>
+                        <outlet property="UIformat" destination="Mhm-t3-w5V" id="NUh-Bc-hKL"/>
                         <outlet property="UIimage" destination="nB0-Kl-nMk" id="Db4-tp-yLe"/>
+                        <outlet property="UInetwork" destination="8Q5-Up-gAV" id="EOg-tL-RCj"/>
+                        <outlet property="UIyear" destination="Kch-6Y-HSU" id="4Sa-BT-j91"/>
                         <outlet property="button" destination="XMi-zc-YEw" id="I81-CS-HGD"/>
                         <outlet property="detailDescriptionLabel" destination="0XM-y9-sOw" id="deQ-Na-JPF"/>
                         <outlet property="episodes" destination="eSr-ZV-cLt" id="Z8t-eH-u6n"/>
