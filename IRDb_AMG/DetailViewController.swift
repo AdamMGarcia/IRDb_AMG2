@@ -10,39 +10,38 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
-    @IBOutlet weak var detailDescriptionLabel: UILabel!
-    @IBOutlet weak var UIname: UILabel!
-    @IBOutlet weak var UIformat: UILabel!
-    @IBOutlet weak var UIyear: UILabel!
-    @IBOutlet weak var UIimage: UIImageView!
-    @IBOutlet weak var UInetwork: UILabel!
-    @IBOutlet weak var UIepisode: UILabel!
-    @IBOutlet weak var UIcastButton: UIButton!
+    @IBOutlet weak var detailDescription: UILabel!
+    @IBOutlet weak var movieName: UILabel!
+    @IBOutlet weak var format: UILabel!
+    @IBOutlet weak var year: UILabel!
+    @IBOutlet weak var picture: UIImageView!
+    @IBOutlet weak var network: UILabel!
+    @IBOutlet weak var episode: UILabel!
+    @IBOutlet weak var castButton: UIButton!
     
-    @IBOutlet weak var UIdescription: UILabel!
-    @IBOutlet weak var UIsummary: UILabel!
+    @IBOutlet weak var summary: UILabel!
     
-    
+ 
     
     func configureView() {
         // Update the user interface for the detail item.
         if let detail = detailItem {
-            if let episodes = detail.episode{
-                UIepisode.text = "\(episodes)"
+            if let episodes = detail.episodes{
+                episode.text = "\(episodes)"
                 
             }
             
-            UIname.text = detail.name
-            UIyear.text = detail.yearStart
-            UIformat.text = detail.format
-            UInetwork.text = detail.network
-            UIdescription.text = detail.description
-            UIsummary.text = detail.summary
+            movieName.text = detail.name
+            year.text = detail.yearStart
+            format.text = detail.format
+            network.text = detail.studio
+            detailDescription.text = detail.description
+            summary.text = detail.summary
             
             let url = URL(string: detail.imageURL)
             let data = try! Data(contentsOf: url!)
             let image = UIImage(data: data)
-            UIimage.image = image
+            picture.image = image
             
         }
     }

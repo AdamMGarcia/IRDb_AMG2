@@ -22,16 +22,16 @@ class Entry: Codable {
     let format: String
     let yearStart: String
     let yearEnd: String?
-    let episode: int?
-    let network: String?
+    let episodes: Int?
+    let studio: String?
     let imageURL: String
     let description: String
     let summary: String
-    let starring: [Starring]
+    //let starring: [Starring]
 }
 
-class Starring: Codable {
-    let name: String
-    let playing: String
-}
+//class Starring: Codable {
+//    let name: String
+//    let playing: String
+//}
 
